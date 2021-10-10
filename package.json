@@ -1,0 +1,16 @@
+{
+  "name": "webapivanilanodejs",
+  "version": "1.0.0",
+  "description": "This is web api with vanila node js without any framework.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Waqar",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
