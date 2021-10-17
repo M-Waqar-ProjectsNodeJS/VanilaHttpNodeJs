@@ -1,6 +1,8 @@
-// console.log("hello world");
 const http = require("http");
 const PORT = process.env.PORT || 5000;
+
+//const data = require("./Second"); // Common Js Module
+//import harry from "./Second.js"; // ECMAScript Module
 
 const server = http.createServer(async (req, res) => {
   if (req.url === "/") {
@@ -18,7 +20,7 @@ const server = http.createServer(async (req, res) => {
     res.end();
   } else if (req.url === "/api") {
     res.writeHead(200, { "Content-Type": "application/json" });
-    res.write("Api End Point");
+    res.write(JSON.stringify({ data: harry }));
     res.end();
   } else {
     res.writeHead(404, { "Content-Type": "application/json" });
